@@ -1,4 +1,9 @@
-from graphics import Window
+from graphics import Window, Line, Point
 
-win = Window(800,800)
-win.wait_for_close()
+def main():
+    win = Window(800,800)
+    l = Line(Point(50,50), Point(500,500))
+    win.draw_line(l, "black")
+    win.wait_for_close()
+
+main()
